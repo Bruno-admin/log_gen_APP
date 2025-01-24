@@ -35,3 +35,9 @@ Use the above **[fluent_bit_deployment.yaml](fluent_bit_deployment.yaml)** and r
 ```
 kubectl apply -f fluent_bit_deployment.yaml
 ```
+
+## Grafana
+Use the above **[grafana-deployment.yaml](grafana-deployment.yaml)** and run:
+```
+kubectl apply -f grafana-deployment.yaml
+```
