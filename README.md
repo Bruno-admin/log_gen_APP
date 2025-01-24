@@ -25,3 +25,13 @@ In case you are using a Cloud solution Kubernetes, you dont need to use the last
 ```
 imagePullPolicy: Never
 ```
+## Fluint bit
+Since we are using docker deamon in our Minikube cluster, we have build a fluint bit docker image locally:
+
+```
+docker build -t fluent-bit:custom .
+```
+Use the above **[fluent_bit_deployment.yaml](fluent_bit_deployment.yaml)** and run:
+```
+kubectl apply -f fluent_bit_deployment.yaml
+```
